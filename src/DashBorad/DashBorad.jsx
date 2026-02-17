@@ -32,11 +32,11 @@ const DashBorad = () => {
           </tr>
         </thead>
         <tbody>
-          {userList.map((elm) => {
+          {userList.map((elm,ind) => {
             const { name, age, email, address, image, id } = elm;
             return (
               <tr key={id}>
-                <th scope="row">{id + 1}</th>
+                <th scope="row">{ind + 1}</th>
                 <td>{name}</td>
                 <td>{age}</td>
                 <td>{email}</td>
